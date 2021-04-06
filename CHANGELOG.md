@@ -1,7 +1,7 @@
 # Changelog
 
 This changelog follows [the Keep a Changelog standard](https://keepachangelog.com).
-## 1.0.0 (2021-03-08)
+## 1.0.0 (2021-04-06)
 
 Initial release.
 Support for Blade Icons v1.0
