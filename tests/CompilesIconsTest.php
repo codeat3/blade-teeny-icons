@@ -13,11 +13,11 @@ class CompilesIconsTest extends TestCase
     /** @test */
     public function it_compiles_a_single_anonymous_component()
     {
-        $result = svg('si-laravelnova')->toHtml();
+        $result = svg('ti-360')->toHtml();
 
         // Note: the empty class here seems to be a Blade components bug.
         $expected = <<<'SVG'
-            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Laravel Nova icon</title><path d="M21.333 4.319C16.56.386 9.453.632 4.973 5.057a7.571 7.571 0 0 0 0 10.8c3.018 2.982 7.912 2.982 10.931 0a3.245 3.245 0 0 0 0-4.628 3.342 3.342 0 0 0-4.685 0 1.114 1.114 0 0 1-1.561 0 1.082 1.082 0 0 1 0-1.543 5.57 5.57 0 0 1 7.808 0 5.408 5.408 0 0 1 0 7.714c-3.881 3.834-10.174 3.834-14.055 0a9.734 9.734 0 0 1-.015-13.87C5.596 1.35 8.638 0 12 0c3.75 0 7.105 1.68 9.333 4.319zm-.714 16.136A12.184 12.184 0 0 1 12 24a12.18 12.18 0 0 1-9.333-4.319c4.772 3.933 11.88 3.687 16.36-.738a7.571 7.571 0 0 0 0-10.8c-3.018-2.982-7.912-2.982-10.931 0a3.245 3.245 0 0 0 0 4.628 3.342 3.342 0 0 0 4.685 0 1.114 1.114 0 0 1 1.561 0 1.082 1.082 0 0 1 0 1.543 5.57 5.57 0 0 1-7.808 0 5.408 5.408 0 0 1 0-7.714c3.881-3.834 10.174-3.834 14.055 0a9.734 9.734 0 0 1 .03 13.855z"/></svg>
+            <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M7 8.5V8h.5a.5.5 0 11-.5.5zM11.5 6a.5.5 0 00-.5.5v2a.5.5 0 001 0v-2a.5.5 0 00-.5-.5z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M0 7.5a7.5 7.5 0 0112.787-5.32 1.5 1.5 0 011.659 2.484A7.52 7.52 0 0115 7.5a7.5 7.5 0 01-15 0zM13.5 3a.5.5 0 100 1 .5.5 0 000-1zM2 6h1.5l-.9 1.2A.5.5 0 003 8h.5a.5.5 0 010 1H2v1h1.5a1.5 1.5 0 00.449-2.932L4.9 5.8a.5.5 0 00-.4-.8H2v1zm5.5-1A1.5 1.5 0 006 6.5v2A1.5 1.5 0 107.5 7H7v-.5a.5.5 0 01.5-.5H8V5h-.5zM10 6.5a1.5 1.5 0 013 0v2a1.5 1.5 0 01-3 0v-2z" fill="currentColor"/></svg>
             SVG;
 
         $this->assertSame($expected, $result);
@@ -26,10 +26,10 @@ class CompilesIconsTest extends TestCase
     /** @test */
     public function it_can_add_classes_to_icons()
     {
-        $result = svg('si-laravelnova', 'w-6 h-6 text-gray-500')->toHtml();
+        $result = svg('ti-360', 'w-6 h-6 text-gray-500')->toHtml();
 
         $expected = <<<'SVG'
-            <svg class="w-6 h-6 text-gray-500" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Laravel Nova icon</title><path d="M21.333 4.319C16.56.386 9.453.632 4.973 5.057a7.571 7.571 0 0 0 0 10.8c3.018 2.982 7.912 2.982 10.931 0a3.245 3.245 0 0 0 0-4.628 3.342 3.342 0 0 0-4.685 0 1.114 1.114 0 0 1-1.561 0 1.082 1.082 0 0 1 0-1.543 5.57 5.57 0 0 1 7.808 0 5.408 5.408 0 0 1 0 7.714c-3.881 3.834-10.174 3.834-14.055 0a9.734 9.734 0 0 1-.015-13.87C5.596 1.35 8.638 0 12 0c3.75 0 7.105 1.68 9.333 4.319zm-.714 16.136A12.184 12.184 0 0 1 12 24a12.18 12.18 0 0 1-9.333-4.319c4.772 3.933 11.88 3.687 16.36-.738a7.571 7.571 0 0 0 0-10.8c-3.018-2.982-7.912-2.982-10.931 0a3.245 3.245 0 0 0 0 4.628 3.342 3.342 0 0 0 4.685 0 1.114 1.114 0 0 1 1.561 0 1.082 1.082 0 0 1 0 1.543 5.57 5.57 0 0 1-7.808 0 5.408 5.408 0 0 1 0-7.714c3.881-3.834 10.174-3.834 14.055 0a9.734 9.734 0 0 1 .03 13.855z"/></svg>
+            <svg class="w-6 h-6 text-gray-500" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M7 8.5V8h.5a.5.5 0 11-.5.5zM11.5 6a.5.5 0 00-.5.5v2a.5.5 0 001 0v-2a.5.5 0 00-.5-.5z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M0 7.5a7.5 7.5 0 0112.787-5.32 1.5 1.5 0 011.659 2.484A7.52 7.52 0 0115 7.5a7.5 7.5 0 01-15 0zM13.5 3a.5.5 0 100 1 .5.5 0 000-1zM2 6h1.5l-.9 1.2A.5.5 0 003 8h.5a.5.5 0 010 1H2v1h1.5a1.5 1.5 0 00.449-2.932L4.9 5.8a.5.5 0 00-.4-.8H2v1zm5.5-1A1.5 1.5 0 006 6.5v2A1.5 1.5 0 107.5 7H7v-.5a.5.5 0 01.5-.5H8V5h-.5zM10 6.5a1.5 1.5 0 013 0v2a1.5 1.5 0 01-3 0v-2z" fill="currentColor"/></svg>
             SVG;
 
         $this->assertSame($expected, $result);
@@ -38,10 +38,10 @@ class CompilesIconsTest extends TestCase
     /** @test */
     public function it_can_add_styles_to_icons()
     {
-        $result = svg('si-laravelnova', ['style' => 'color: #555'])->toHtml();
+        $result = svg('ti-360', ['style' => 'color: #555'])->toHtml();
 
         $expected = <<<'SVG'
-            <svg style="color: #555" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><title>Laravel Nova icon</title><path d="M21.333 4.319C16.56.386 9.453.632 4.973 5.057a7.571 7.571 0 0 0 0 10.8c3.018 2.982 7.912 2.982 10.931 0a3.245 3.245 0 0 0 0-4.628 3.342 3.342 0 0 0-4.685 0 1.114 1.114 0 0 1-1.561 0 1.082 1.082 0 0 1 0-1.543 5.57 5.57 0 0 1 7.808 0 5.408 5.408 0 0 1 0 7.714c-3.881 3.834-10.174 3.834-14.055 0a9.734 9.734 0 0 1-.015-13.87C5.596 1.35 8.638 0 12 0c3.75 0 7.105 1.68 9.333 4.319zm-.714 16.136A12.184 12.184 0 0 1 12 24a12.18 12.18 0 0 1-9.333-4.319c4.772 3.933 11.88 3.687 16.36-.738a7.571 7.571 0 0 0 0-10.8c-3.018-2.982-7.912-2.982-10.931 0a3.245 3.245 0 0 0 0 4.628 3.342 3.342 0 0 0 4.685 0 1.114 1.114 0 0 1 1.561 0 1.082 1.082 0 0 1 0 1.543 5.57 5.57 0 0 1-7.808 0 5.408 5.408 0 0 1 0-7.714c3.881-3.834 10.174-3.834 14.055 0a9.734 9.734 0 0 1 .03 13.855z"/></svg>
+            <svg style="color: #555" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M7 8.5V8h.5a.5.5 0 11-.5.5zM11.5 6a.5.5 0 00-.5.5v2a.5.5 0 001 0v-2a.5.5 0 00-.5-.5z" fill="currentColor"/><path fill-rule="evenodd" clip-rule="evenodd" d="M0 7.5a7.5 7.5 0 0112.787-5.32 1.5 1.5 0 011.659 2.484A7.52 7.52 0 0115 7.5a7.5 7.5 0 01-15 0zM13.5 3a.5.5 0 100 1 .5.5 0 000-1zM2 6h1.5l-.9 1.2A.5.5 0 003 8h.5a.5.5 0 010 1H2v1h1.5a1.5 1.5 0 00.449-2.932L4.9 5.8a.5.5 0 00-.4-.8H2v1zm5.5-1A1.5 1.5 0 006 6.5v2A1.5 1.5 0 107.5 7H7v-.5a.5.5 0 01.5-.5H8V5h-.5zM10 6.5a1.5 1.5 0 013 0v2a1.5 1.5 0 01-3 0v-2z" fill="currentColor"/></svg>
             SVG;
 
         $this->assertSame($expected, $result);

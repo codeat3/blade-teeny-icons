@@ -1,19 +1,8 @@
 # Changelog
 
 This changelog follows [the Keep a Changelog standard](https://keepachangelog.com).
-
-## 1.1.0 (2021-03-29)
-* Upgrading Teeny Icons to [v4.17.0](https://github.com/teeny-icons/teeny-icons/releases/tag/4.17.0)
-
-## 1.0.0 (2021-03-22)
-* Upgrading Teeny Icons to v4.16.0
-* Upgrading blade-icons to v1.0
-
-
-## 0.2.0 (2021-03-15)
-updated icons with latest release [SimpleIcons 4.15.0](https://github.com/sirmple-icons/teeny-icons/releases/tag/4.15.0)
-
-## 0.1.0 (2021-03-08)
+## 1.0.0 (2021-03-08)
 
 Initial release.
-Current package support [SimpleIcons 4.14.0](https://github.com/sirmple-icons/teeny-icons/releases/tag/4.14.0)
+Support for Blade Icons v1.0
+Current package support [Teeny Icons v0.4.1](https://github.com/teenyicons/teenyicons/releases/tag/v0.4.1)
