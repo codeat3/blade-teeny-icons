@@ -14,7 +14,7 @@ final class BladeTeenyIconsServiceProvider extends ServiceProvider
         $this->callAfterResolving(Factory::class, function (Factory $factory) {
             $factory->add('teeny-icons', [
                 'path' => __DIR__.'/../resources/svg',
-                'prefix' => 'ti',
+                'prefix' => 'tni',
             ]);
         });
     }
@@ -23,8 +23,8 @@ final class BladeTeenyIconsServiceProvider extends ServiceProvider
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../resources/svg' => public_path('vendor/blade-ti'),
-            ], 'blade-ti');
+                __DIR__.'/../resources/svg' => public_path('vendor/blade-tni'),
+            ], 'blade-tni');
         }
     }
 }
