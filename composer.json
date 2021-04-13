@@ -1,7 +1,7 @@
 {
     "name": "codeat3/blade-teeny-icons",
-    "description": "A package to easily make use of Teeny Icons in your Laravel Blade views.",
-    "keywords": ["Blade", "simpleicons", "Laravel"],
+    "description": "A package to easily make use of \"Teeny Icons\" in your Laravel Blade views.",
+    "keywords": ["Blade", "teeny-icons", "Laravel"],
     "homepage": "https://github.com/codeat3/blade-teeny-icons",
     "license": "MIT",
     "authors": [
