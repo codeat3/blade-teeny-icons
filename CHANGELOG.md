@@ -2,7 +2,7 @@
 
 This changelog follows [the Keep a Changelog standard](https://keepachangelog.com).
 
-## 1.2.0 (2021-04-08)
+## 1.2.0 (2021-05-12)
 Added support for config file
 
 ## 1.1.0 (2021-04-08)
