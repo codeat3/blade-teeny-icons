@@ -14,7 +14,7 @@
     <img src="https://img.shields.io/packagist/dt/codeat3/blade-teeny-icons" alt="Total Downloads">
 </a>
 
-A package to easily make use of [Teeny Icons](https://github.com/teeny-icons/teeny-icons) in your Laravel Blade views.
+A package to easily make use of [Teeny Icons](https://github.com/teenyicons/teenyicons) in your Laravel Blade views.
 
 For a full list of available icons see [the SVG directory](resources/svg) or preview them at [teenyicons.com](https://teenyicons.com/).
 
