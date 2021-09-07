@@ -1,8 +1,9 @@
 <?php
 
 use Codeat3\BladeIconGeneration\IconProcessor;
+use Symfony\Component\Finder\SplFileInfo;
 
-$svgNormalization = static function (string $tempFilepath, array $iconSet) {
+$svgNormalization = static function (string $tempFilepath, array $iconSet, SplFileInfo $file) {
 
     // perform generic optimizations
     $iconProcessor = new IconProcessor($tempFilepath, $iconSet);
@@ -15,7 +16,7 @@ $svgNormalization = static function (string $tempFilepath, array $iconSet) {
 return [
     [
         // Define a source directory for the sets like a node_modules/ or vendor/ directory...
-        'source' => __DIR__.'/../dist/src/solid/',
+        'source' => __DIR__.'/../dist/solid/',
 
         // Define a destination directory for your icons. The below is a good default...
         'destination' => __DIR__.'/../resources/svg',
@@ -32,7 +33,7 @@ return [
     ],
     [
         // Define a source directory for the sets like a node_modules/ or vendor/ directory...
-        'source' => __DIR__.'/../dist/src/outline/',
+        'source' => __DIR__.'/../dist/outline/',
 
         // Define a destination directory for your icons. The below is a good default...
         'destination' => __DIR__.'/../resources/svg',
