@@ -2,7 +2,7 @@
 
 This changelog follows [the Keep a Changelog standard](https://keepachangelog.com).
 
-## 1.4.1 (2021-09-07)
+## 1.5.1 (2021-09-07)
 * fixes the `fill` attribute in the icons
 
 ## 1.3.1 (2021-08-30)
