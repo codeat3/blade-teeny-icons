@@ -2,7 +2,10 @@
 
 This changelog follows [the Keep a Changelog standard](https://keepachangelog.com).
 
-## 1.3.1 (2021-05-14)
+## 1.4.1 (2021-09-07)
+* fixes the `fill` attribute in the icons
+
+## 1.3.1 (2021-08-30)
 * synced with the latest commit of [Teenyicons #6734a3c1af3f27c8ca76debcd6c6fd2f5d63ef4e](https://github.com/teenyicons/teenyicons/commit/6734a3c1af3f27c8ca76debcd6c6fd2f5d63ef4e)
 
 ## 1.2.1 (2021-05-14)
