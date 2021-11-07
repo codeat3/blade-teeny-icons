@@ -2,6 +2,8 @@
 
 This changelog follows [the Keep a Changelog standard](https://keepachangelog.com).
 
+## [Unreleased](https://github.com/codeat3/blade-teeny-icons/compare/1.5.1...main)
+
 ## 1.5.1 (2021-09-07)
 * fixes the `fill` attribute in the icons
 
