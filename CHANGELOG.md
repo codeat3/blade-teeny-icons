@@ -2,7 +2,15 @@
 
 This changelog follows [the Keep a Changelog standard](https://keepachangelog.com).
 
-## [Unreleased](https://github.com/codeat3/blade-teeny-icons/compare/1.7.1...HEAD)
+## [Unreleased](https://github.com/codeat3/blade-teeny-icons/compare/1.8.1...HEAD)
+
+## [1.8.1](https://github.com/codeat3/blade-teeny-icons/compare/1.7.1...1.8.1) - 2022-02-05
+
+## What's Changed
+
+- Added support for Laravel 9 by @swapnilsarwe in https://github.com/codeat3/blade-teeny-icons/pull/4
+
+**Full Changelog**: https://github.com/codeat3/blade-teeny-icons/compare/1.7.1...1.8.1
 
 ## [1.7.1](https://github.com/codeat3/blade-teeny-icons/compare/1.5.1...1.7.1) - 2022-01-03
 
