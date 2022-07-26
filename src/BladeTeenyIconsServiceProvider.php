@@ -17,24 +17,24 @@ final class BladeTeenyIconsServiceProvider extends ServiceProvider
         $this->callAfterResolving(Factory::class, function (Factory $factory, Container $container) {
             $config = $container->make('config')->get('blade-teeny-icons', []);
 
-            $factory->add('teeny-icons', array_merge(['path' => __DIR__.'/../resources/svg'], $config));
+            $factory->add('teeny-icons', array_merge(['path' => __DIR__ . '/../resources/svg'], $config));
         });
     }
 
     private function registerConfig(): void
     {
-        $this->mergeConfigFrom(__DIR__.'/../config/blade-teeny-icons.php', 'blade-teeny-icons');
+        $this->mergeConfigFrom(__DIR__ . '/../config/blade-teeny-icons.php', 'blade-teeny-icons');
     }
 
     public function boot(): void
     {
         if ($this->app->runningInConsole()) {
             $this->publishes([
-                __DIR__.'/../resources/svg' => public_path('vendor/blade-teeny-icons'),
+                __DIR__ . '/../resources/svg' => public_path('vendor/blade-teeny-icons'),
             ], 'blade-tni'); // TODO: update this alias with `blade-teeny-icons` in next major release
 
             $this->publishes([
-                __DIR__.'/../config/blade-teeny-icons.php' => $this->app->configPath('blade-teeny-icons.php'),
+                __DIR__ . '/../config/blade-teeny-icons.php' => $this->app->configPath('blade-teeny-icons.php'),
             ], 'blade-teeny-icons-config');
         }
     }
